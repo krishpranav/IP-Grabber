@@ -10,9 +10,8 @@ command -v curl > /dev/null 2>&1 || { echo >&2 "I require curl but it's not inst
 }
 
 menu() {
-
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]\e[0m\e[1;93mWill You Use This Tool For Good Purpose\e[0m\en"
-read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Yes OR No: \e[0m\en' option
+read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m]Yes OR No: \e[0m\en' option
 
 
 if [[ $option == Yes || $option == yes ]]; then
@@ -23,9 +22,9 @@ elif [[ $option == 99 ]]; then
 exit 1
 
 else
+printf "\e[1;93mOk Your not using this tool for good purpose\e[1;93m"
 printf "\e[1;93m[!] Please Accept The Policy!!!\e[0m\n"
 sleep 1
-clear
 exit
 fi
 }
