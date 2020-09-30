@@ -10,4 +10,4 @@ clear
 echo "INSTALLING CURL"
 sudo apt-get install curl
 clear
-echo "COMPLETED INSTALLING"
+echo "COMPLETED INSTALLATION"
